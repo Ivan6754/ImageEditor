@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Editor</title>
+</head>
+<body>
+<h1>Загрузить изображение</h1>
+<form method="post" enctype="multipart/form-data" th:action="@{/upload}">
+    <input type="file" name="file" accept="image/jpeg, image/png"/>
+    <button type="submit">Загрузить</button>
+</form>
+<p th:text="${message}"></p>
+</body>
+</html>
+
+ <!--После запуска, перейти на http://localhost:8080/-->
